@@ -2008,9 +2008,6 @@ function portal_allow($clientip, $clientmac, $username, $password = null, $attri
 	if (is_null($radiusctx)) {
 		$radiusctx = 'first';
 	}
-
-	//tmp
-	$config['captiveportal'][$cpzone]['newloginwins'] = true;
 	
 	foreach ($cpdb as $cpentry) {
 		if (empty($cpentry[11])) {
